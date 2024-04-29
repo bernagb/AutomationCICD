@@ -19,7 +19,6 @@ public class ErrorValidationsTest extends BaseTest{
 		//give wrong password and email
 		landingPage.loginApplication("bgb@gmail.com", "3456&b");
 		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
-		driver.close();
 	
 		
 
